@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1078e0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: rgb(248, 239, 239);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Sajilo Softwares Survey Form</h1>
+
+    <form>
+
+        <div class="section">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        
+        <div class="section">
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        
+        <div class="section">
+            <label>Which option describes you?</label><br><br>
+
+            <select name="role">
+                <option value=""> Select an option</option>
+                <option>Intern</option>
+                <option>Trainee</option>
+                <option>Employee</option>
+            </select>
+        </div>
+
+        
+        <div class="section">
+            <label>Would you recommend Sajilo Softwares to your friend?</label><br><br>
+
+            <input type="radio" id="yes" name="recommend" value="Yes">
+            <label for="yes">Yes</label><br>
+
+            <input type="radio" id="no" name="recommend" value="No">
+            <label for="no">No</label><br>
+
+            <input type="radio" id="maybe" name="recommend" value="Maybe">
+            <label for="maybe">Maybe</label>
+        </div>
+
+        
+        <div class="section">
+            <label>Languages or Frameworks you have used:</label><br><br>
+
+            <input type="checkbox" name="language" value="C"> C<br>
+            <input type="checkbox" name="language" value="C++"> C++<br>
+            <input type="checkbox" name="language" value="HTML"> HTML<br>
+            <input type="checkbox" name="language" value="CSS"> CSS<br>
+            <input type="checkbox" name="language" value="Python"> Python<br>
+            <input type="checkbox" name="language" value="Ruby"> Ruby<br>
+            <input type="checkbox" name="language" value="Rust"> Rust<br>
+            <input type="checkbox" name="language" value="JavaScript"> JavaScript<br>
+            <input type="checkbox" name="language" value="React.js"> React.js<br>
+            <input type="checkbox" name="language" value="Node.js"> Node.js<br>
+            <input type="checkbox" name="language" value="Laravel"> Laravel
+        </div>
+
+        
+        <div class="section">
+            <label for="comment">Any Comment or Suggestion:</label><br>
+            <textarea id="comment" name="comment" rows="5" placeholder="Write your comments here..."></textarea>
+        </div>
+
+        
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+</body>
+</html>
